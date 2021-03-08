@@ -1,0 +1,23 @@
+{
+    "name": "TabFairy",
+    "description": "Tab Grouping Using a Tree Style Sidebar",
+    "version": "1.0",
+    "manifest_version": 2,
+ 
+    "icons": {
+
+      "48": "/resources/48x48.svg"
+    },
+
+    "sidebar_action": {
+      "default_title": "TabFairy",
+
+      "default_icon": {
+
+        "48": "/resources/48x48.svg"
+      },
+      "default_panel": "/sidebar/sidebar.html",
+      "browser_style": false
+    }
+
+}
