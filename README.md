@@ -1,4 +1,4 @@
-# TabFairy
+# Overview
 The objective of TabFairy is to extend the Mozilla Firefox web browser with features that would allow users to keep tabs organized while surfing the internet. 
 For many users, organizational challenges occur when they try to open too many tabs. The tab bar quickly becomes cluttered, and since there is only so much space 
 in the tab bar, the tab titles become smaller and unreadable. Finding a needed tab becomes a challenging process. It becomes nearly impossible to achieve a productive 
