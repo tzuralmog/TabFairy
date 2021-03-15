@@ -6,3 +6,7 @@ workflow, especially if working on several projects that require working with ma
 for different projects. The user might keep several windows running for the duration of the projects. While this solution is better than using just a single Firefox 
 window, it adds the additional organizational challenge of switching between windows. It becomes even more difficult to transition between windows if multiple other 
 programs are running simultaneously.
+
+# Installation and running
+We are developing TabFairy using the Node.js runtime environment; clone this package and [install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). Execute with 
+    node main.js

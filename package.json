@@ -1,5 +1,5 @@
 {
-  "name": "tabfairy",
+  "name": "TabFairy",
   "version": "1.0.0",
   "description": "Tab grouping extension for Firefox",
   "main": "main.js",
