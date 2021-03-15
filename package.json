@@ -1,0 +1,19 @@
+{
+  "name": "TabFairy",
+  "version": "1.0.0",
+  "description": "Tab grouping extension for Firefox",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzuralmog/TabFairy.git"
+  },
+  "author": "Aurimas Alkevicius, Tzur Almog, Dan Hemphill, Pooja Patel",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/tzuralmog/TabFairy/issues"
+  },
+  "homepage": "https://github.com/tzuralmog/TabFairy#readme"
+}
