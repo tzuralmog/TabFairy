@@ -4,7 +4,7 @@
   "description": "Tab grouping extension for Firefox",
   "main": "main.js",
   "scripts": {
-    "test": "node syke.js"
+    "test": "node main.js"
   },
   "repository": {
     "type": "git",
