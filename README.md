@@ -7,9 +7,10 @@ for different projects. The user might keep several windows running for the dura
 window, it adds the additional organizational challenge of switching between windows. It becomes even more difficult to transition between windows if multiple other 
 programs are running simultaneously.
 
-# Installation and running
+# Installation and Running
 We are developing TabFairy using the Node.js runtime environment; clone this package and [install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). Execute with 
     
     node main.js
     
-
+# Build History
+We are using Travis CI for testing.  The build history can be accessed [here](https://travis-ci.com/github/tzuralmog/TabFairy/builds).
