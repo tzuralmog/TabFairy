@@ -1,19 +1,19 @@
 {
-  "name": "software-engineering-ii",
+  "name": "tabfairy",
   "version": "1.0.0",
-  "description": "Test package for Travis CI",
+  "description": "Tab grouping extension for Firefox",
   "main": "main.js",
   "scripts": {
     "test": "node main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhemp09/software-engineering-II.git"
+    "url": "git+https://github.com/tzuralmog/TabFairy.git"
   },
-  "author": "Dan Hemphill",
-  "license": "ISC",
+  "author": "Aurimas Alkevicius, Tzur Almong, Dan Hemphill, Pooja Patel",
+  "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/dhemp09/software-engineering-II/issues"
+    "url": "https://github.com/tzuralmog/TabFairy/issues"
   },
-  "homepage": "https://github.com/dhemp09/software-engineering-II#readme"
+  "homepage": "https://github.com/tzuralmog/TabFairy#readme"
 }
