@@ -1,0 +1,19 @@
+{
+  "name": "software-engineering-ii",
+  "version": "1.0.0",
+  "description": "Test package for Travis CI",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhemp09/software-engineering-II.git"
+  },
+  "author": "Dan Hemphill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhemp09/software-engineering-II/issues"
+  },
+  "homepage": "https://github.com/dhemp09/software-engineering-II#readme"
+}
