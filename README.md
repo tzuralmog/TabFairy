@@ -12,5 +12,15 @@ We are developing TabFairy using the Node.js runtime environment; clone this pac
     
     node main.js
     
+To view the extension as a temporary installation, open a Firefox window and follow these steps:
+
+1. In the address bar launch about:debugging page.
+2. Click "This Firefox" at the top left.
+3. Click "Load Temporary Add-on" at the top right.
+4. Select manifest.json file located in the webextensions folder of a cloned repository on your local machine.
+
+TabFairy sidebar should now be visible at the left of the browser panel.
+
+    
 # Build History
 We are using Travis CI for testing.  The build history can be accessed [here](https://travis-ci.com/github/tzuralmog/TabFairy/builds).
