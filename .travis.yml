@@ -2,5 +2,7 @@ language: node_js
   - '10'
 addons:
   firefox: latest
-services: 
-  - xvfb
+install:
+  npm install -g selenium-webdriver
+  npm update
+  
