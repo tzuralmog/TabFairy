@@ -11,6 +11,8 @@ describe('test google.com', () => {
     var driver;
     var options = new firefox.Options();
     options.addExtensions("tabfairy.xpi");
+    options.setPreference('xpinstall.signatures.required', false);
+    options.setBinary('/usr/local/bin/firefox/firefox');
     beforeEach(() => {
         driver = new Builder()
             .forBrowser('firefox')
