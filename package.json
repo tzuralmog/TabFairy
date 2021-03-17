@@ -4,7 +4,7 @@
   "description": "Tab grouping extension for Firefox",
   "main": "main.js",
   "scripts": {
-    "test": "node google.test.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/tzuralmog/TabFairy/issues"
   },
-  "homepage": "https://github.com/tzuralmog/TabFairy#readme"
+  "homepage": "https://github.com/tzuralmog/TabFairy#readme",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "selenium-webdriver": "^4.0.0-beta.2"
+  }
 }
