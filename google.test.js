@@ -12,7 +12,7 @@ describe('test google.com', () => {
     var options = new firefox.Options();
     options.addExtensions("tabfairy.xpi");
     options.setPreference('xpinstall.signatures.required', false);
-    options.setBinary('/usr/local/bin/firefox/firefox');
+    //options.setBinary('/usr/local/bin/firefox/firefox');
     beforeEach(() => {
         driver = new Builder()
             .forBrowser('firefox')
