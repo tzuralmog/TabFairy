@@ -1,5 +1,6 @@
 const firefox = require('selenium-webdriver/firefox');
 const fs = require('fs');
+
 describe('test google.com', () => {
     const {
         Builder,
@@ -8,11 +9,12 @@ describe('test google.com', () => {
         until
     } = require('selenium-webdriver');
     var driver;
-    
+    var options = new firefox.Options();
+    options.addExtensions("tabfairy.xpi");
     beforeEach(() => {
         driver = new Builder()
             .forBrowser('firefox')
-            .setFirefoxOptions(new firefox.Options().addExtensions('tabfairy.xpi'))
+            .setFirefoxOptions(options)
             .build();
     });
  
