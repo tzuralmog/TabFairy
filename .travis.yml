@@ -12,5 +12,6 @@ install:
   - sudo mv -f ~/geckodriver /usr/local/share
   - sudo chmod +x /usr/local/share/geckodriver
   - sudo ln -s /usr/local/share/geckodriver /usr/local/bin/geckodriver
-  - pwd
-  - ls
+  - cd webextensions
+  - zip ../tabfairy.xpi *
+  - cd ..
