@@ -3,6 +3,10 @@
     "description": "Tab Grouping Using a Tree Style Sidebar",
     "version": "1.0",
     "manifest_version": 2,
+    "permissions": [
+      "find",
+      "tabs"
+    ],
     "icons": {
 
       "48": "/resources/48x48.svg"
