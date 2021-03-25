@@ -1,0 +1,9 @@
+/** CSS for the Sidebar **/
+.top-bar{
+    margin-top: 50px;
+}
+.new-group{
+    position: absolute;
+    top: 20px;
+    right: 8px;
+}
