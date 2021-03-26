@@ -1,7 +1,16 @@
-// let log = document.getElementById("result-list");
+document.getElementById('new-group').addEventListener('click', function(){
+    //if instruction text is there, remove it
+    if(document.getElementById('empty'))
+        document.getElementById('empty').remove();
 
-function newTab() {
-    browser.tabs.create();
-    let log = document.getElementById("log");
-    log.innerText = "Worked";
-  }
+    //add a new group
+    var ul = document.getElementById("groups");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode("New Group"));
+    ul.appendChild(li);
+});
+
+document.getElementById('new-tab').addEventListener('click', function(){
+  // testing
+  browser.tabs.create();
+});

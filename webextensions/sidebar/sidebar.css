@@ -1,0 +1,25 @@
+/** CSS for the Sidebar **/
+.top-bar{
+    margin-top: 50px;
+}
+.new-group{
+    position: absolute;
+    top: 20px;
+    right: 8px;
+}
+#groups{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+li{
+    list-style-type: none;
+    width: auto;
+    height: 40px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 5px;
+    background-color: grey;
+    display: block;
+    left: 0;
+    right: 0;
+}
