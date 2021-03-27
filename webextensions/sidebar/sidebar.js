@@ -7,6 +7,7 @@ document.getElementById('new-group').addEventListener('click', function(){
 });
 
 function createNewGroup(){
+    //create elements and set attributes
     var ul = document.getElementById("groups");
     var li = document.createElement("li");
     var text = document.createElement("span");
@@ -16,10 +17,14 @@ function createNewGroup(){
     var btn = document.createElement("button");
     btn.setAttribute("class", "remove");
     btn.innerHTML = "Remove";
+
+    //remove group function(Will be replaced once we have tab stuff)
     btn.onclick = function(){
         btn.parentElement.remove()
         return;
     };
+
+    //append the stuff
     li.appendChild(text);
     li.appendChild(btn);
     ul.appendChild(li);
