@@ -11,6 +11,7 @@ function createNewGroup(){
     var li = document.createElement("li");
     var text = document.createElement("span");
     text.setAttribute("contenteditable", "true");
+    text.setAttribute("spellcheck", "false");
     text.innerHTML = "New Group";
     var btn = document.createElement("button");
     btn.setAttribute("class", "remove");
