@@ -9,6 +9,7 @@ document.getElementById('new-group').addEventListener('click', function(){
 function createNewGroup(){
     var ul = document.getElementById("groups");
     var li = document.createElement("li");
+    li.setAttribute("contenteditable", "true");
     var btn = document.createElement("button");
     btn.setAttribute("class", "remove");
     btn.innerHTML = "Remove";
