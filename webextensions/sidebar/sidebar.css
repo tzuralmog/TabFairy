@@ -7,6 +7,10 @@
     top: 20px;
     right: 8px;
 }
+#rename{
+    float: right;
+    margin-right: 5px;
+}
 #groups{
     margin-left: 0px;
     padding-left: 0px;
