@@ -9,7 +9,9 @@ document.getElementById('new-group').addEventListener('click', function(){
 function createNewGroup(){
     var ul = document.getElementById("groups");
     var li = document.createElement("li");
-    li.setAttribute("contenteditable", "true");
+    var text = document.createElement("span");
+    text.setAttribute("contenteditable", "true");
+    text.innerHTML = "New Group";
     var btn = document.createElement("button");
     btn.setAttribute("class", "remove");
     btn.innerHTML = "Remove";
@@ -17,7 +19,7 @@ function createNewGroup(){
         btn.parentElement.remove()
         return;
     };
-    li.appendChild(document.createTextNode("New Group"));
+    li.appendChild(text);
     li.appendChild(btn);
     ul.appendChild(li);
 }
