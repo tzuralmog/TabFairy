@@ -48,12 +48,32 @@ document.getElementById('new-group').addEventListener('click', function(){
     if(document.getElementById('empty'))
         document.getElementById('empty').remove();
 
-    //add a new group
+    createNewGroup();
+});
+
+function createNewGroup(){
+    //create elements and set attributes
     var ul = document.getElementById("groups");
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode("New Group"));
+    var text = document.createElement("span");
+    text.setAttribute("contenteditable", "true");
+    text.setAttribute("spellcheck", "false");
+    text.innerHTML = "New Group";
+    var btn = document.createElement("button");
+    btn.setAttribute("class", "remove");
+    btn.innerHTML = "Remove";
+
+    //remove group function(Will be replaced once we have tab stuff)
+    btn.onclick = function(){
+        btn.parentElement.remove()
+        return;
+    };
+
+    //append the stuff
+    li.appendChild(text);
+    li.appendChild(btn);
     ul.appendChild(li);
-});
+};
 
 document.getElementById('list-tabs').addEventListener('click', function(){
   // testing

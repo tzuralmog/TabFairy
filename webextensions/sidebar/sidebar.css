@@ -10,6 +10,10 @@
 .tab-buttons{
     right: 8px;
 }
+.remove{
+    float: right;
+    margin-right: 5px;
+}
 #groups{
     margin-left: 0px;
     padding-left: 0px;
@@ -25,4 +29,9 @@ li{
     display: block;
     left: 0;
     right: 0;
+}
+[contenteditable='true']:focus{
+    background: white;
+    border-radius: 2px;
+    padding: 4px;
 }
