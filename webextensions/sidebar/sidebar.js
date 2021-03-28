@@ -1,3 +1,5 @@
+
+
 document.getElementById('new-group').addEventListener('click', function(){
     //if instruction text is there, remove it
     if(document.getElementById('empty'))
@@ -28,4 +30,8 @@ function createNewGroup(){
     li.appendChild(text);
     li.appendChild(btn);
     ul.appendChild(li);
-}
+};
+
+
+
+
