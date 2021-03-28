@@ -26,6 +26,7 @@ function listTabs( ) {
 }
 function listTabsWithRemove(tabId, removeInfo) {
   getCurrentWindowTabs().then((tabs) => {
+     document.getElementById('tab-list').innerText = "Changed";
      let tabsList = document.getElementById('tab-list');
      let currentTabs = document.createDocumentFragment();
      tabsList.textContent = '';
@@ -56,6 +57,5 @@ document.getElementById('new-group').addEventListener('click', function(){
 
 document.getElementById('list-tabs').addEventListener('click', function(){
   // testing
-  // browser.tabs.create();
   listTabs();
 });
