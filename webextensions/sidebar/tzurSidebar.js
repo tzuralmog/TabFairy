@@ -11,20 +11,17 @@ function getCurrentWindowTabs() {
 
 // variable that checks if remove has run, and if so then delays on update to give correct information
 var i = false;
-// count = 0;
+count = 0;
 
 function listTabs( ) {
   getCurrentWindowTabs().then((tabs) => {
-    // document.getElementById('count').innerText = ++count;
-      if(!i){
-        // document.getElementById('log').innerText = browser.windows.getCurrent().then();
-          
+      if(!i){     
      let tabsList = document.getElementById('tab-list');
      let currentTabs = document.createDocumentFragment();
      tabsList.textContent = '';
      for (let tab of tabs) {
       let tabLink = document.createElement('a');
-      tabLink.textContent = tab.title || tab.id;
+      tabLink.textContent = tab.title  + " - "+  tab.id;
       currentTabs.appendChild(tabLink);
       let spacing = document.createElement('br');
       currentTabs.appendChild(spacing);
@@ -38,7 +35,6 @@ function listTabs( ) {
 }
 function listTabsWithRemove(tabId, removeInfo) {
   getCurrentWindowTabs().then((tabs) => {
-    // document.getElementById('count').innerText = ++count;
       i = true;
      let tabsList = document.getElementById('tab-list');
      let currentTabs = document.createDocumentFragment();
@@ -46,7 +42,7 @@ function listTabsWithRemove(tabId, removeInfo) {
      for (let tab of tabs) {
       if (tab.id != tabId) {
       let tabLink = document.createElement('a');
-      tabLink.textContent = tab.title || tab.id;
+      tabLink.textContent = tab.title  + " - "+  tab.id;
       currentTabs.appendChild(tabLink);
       let spacing = document.createElement('br');
       currentTabs.appendChild(spacing);
@@ -67,13 +63,20 @@ document.getElementById('list-tabs').addEventListener('click', function(){
   });
   
 
-  function newTab(){
-    var creating = browser.tabs.create();
-    creating.then();
-    // document.getElementById('log').innerHTML = "Changed";
+function newTab(){
+  // ++count;
+  document.getElementById('log').innerHTML = "Changed" + count;
+  browser.tabs.create({});
+   
 }
 
-document.getElementById('new-tab').addEventListener('click', function(){
-    // testing
-    newTab();
-  });
+document.getElementById('new-tab').addEventListener('click', newTab);
+
+
+function removeTab(){
+  // ++count;
+  document.getElementById('log').innerHTML = "Changed " + typeof document.getElementById('tabID').value ;
+  browser.tabs.remove(parseInt(document.getElementById('tabID').value));
+} 
+
+document.getElementById('rem-tab').addEventListener('click', removeTab);
