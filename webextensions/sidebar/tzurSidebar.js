@@ -75,8 +75,33 @@ document.getElementById('new-tab').addEventListener('click', newTab);
 
 function removeTab(){
   // ++count;
-  document.getElementById('log').innerHTML = "Changed " + typeof document.getElementById('tabID').value ;
+  document.getElementById('log').innerHTML = "Changed " +  document.getElementById('tabID').value ;
   browser.tabs.remove(parseInt(document.getElementById('tabID').value));
 } 
 
 document.getElementById('rem-tab').addEventListener('click', removeTab);
+
+
+function showTab(){
+  // ++count;
+  document.getElementById('log').innerHTML = "Changed " +  document.getElementById('tabID').value ;
+  browser.tabs.show(parseInt(document.getElementById('tabID').value));
+} 
+
+document.getElementById('show-tab').addEventListener('click', showTab);
+
+function onHidden() {
+  document.getElementById('log').innerHTML = "Hide succsess ";
+}
+
+function onError(error) {
+  document.getElementById('log').innerHTML = "Hide error ";
+}
+function hideTab(){
+  // ++count;
+  document.getElementById('log').innerHTML = "Changed " + document.getElementById('tabID').value ;
+  browser.tabs.hide(parseInt(document.getElementById('tabID').value)).then(onHidden, onError);
+} 
+
+
+document.getElementById('hide-tab').addEventListener('click', hideTab);
