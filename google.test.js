@@ -32,16 +32,14 @@ describe('test google.com', () => {
                 expect(title).toEqual('Google');
             });
     });
- 
-    it('should open google search and view search results', async () => {
-        await driver.get('http://www.google.com');
-        var element = await driver.findElement(By.css('input[title=Search]'));
-        await element.sendKeys("selenium", Key.RETURN);
-        await driver.wait(until.titleContains("selenium"), 4000);
+    it('should open a new tab at the tabfairy repository', async () => {
+        await driver.switchTo().newWindow('tab');
+        await driver.get('https://github.com/tzuralmog/TabFairy');
+        await driver.wait(until.titleContains("TabFairy"), 4000);
         driver
             .getTitle()
             .then(title => {
-                expect(title).toEqual('selenium - Google Search');
+                expect(title).toEqual('GitHub - tzuralmog/TabFairy');
             });
     });
 });
