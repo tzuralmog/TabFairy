@@ -18,6 +18,10 @@
     margin-left: 0px;
     padding-left: 0px;
 }
+#tab-list{
+    margin-left: 0px;
+    padding-left: 0px;
+}
 li{
     list-style-type: none;
     width: auto;
