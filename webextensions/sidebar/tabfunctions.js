@@ -20,8 +20,9 @@ function makeList(tabs,tabId = -1) {
             var randomColor = Math.floor(Math.random() * 16777215).toString(16);
             li.style.backgroundColor = '#' + randomColor;
             text.innerHTML = tab.title;
+            text.classList += "TabTitle"
             var btn = document.createElement("button");
-            btn.setAttribute("class", "remove");
+            btn.classList += "tabRemove";
             btn.innerHTML = "Remove";
 
             //remove group function(Will be replaced once we have tab stuff)
@@ -32,7 +33,7 @@ function makeList(tabs,tabId = -1) {
             };
 
             //append the stuff
-            li.appendChild(text);
+            // li.appendChild(text);
             li.appendChild(btn);
             tabsList.appendChild(li);
         }

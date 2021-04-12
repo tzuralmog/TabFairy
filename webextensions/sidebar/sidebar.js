@@ -17,6 +17,7 @@ function createNewGroup() {
     text.setAttribute("spellcheck", "false");
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     li.style.backgroundColor = '#' + randomColor;
+    li.classList += "groupLi";
     text.innerHTML = "New Group";
     var btn = document.createElement("button");
     btn.setAttribute("class", "remove");
