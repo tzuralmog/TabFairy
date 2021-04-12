@@ -9,10 +9,12 @@ var i = false;
 count = 0;
 
 function makeList(tabs,tabId = -1) {
+    // document.getElementById('log').innerHTML = "tabid =" + tabId;
     let tabsList = document.getElementById('tab-list');
     tabsList.innerHTML = '';
     for (let tab of tabs) {
-        if (!i && tab.id != tabId) {
+        if (tab.id != tabId) {
+            // document.getElementById('log').innerHTML = "Changed" + (++count);
             var li = document.createElement("li");
             var text = document.createElement("span");
             var randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -40,11 +42,12 @@ function makeList(tabs,tabId = -1) {
 
 function listTabs() {
     getCurrentWindowTabs().then((tabs) => {
+        
         if (!i) {
             makeList(tabs);
         } else {
             i = false;
-            document.getElementById('log').innerText = i;
+            // document.getElementById('log').innerText = i;
         }
 
     });
@@ -54,36 +57,14 @@ function listTabs() {
 function listTabsWithRemove(tabId, removeInfo) {
     getCurrentWindowTabs().then((tabs) => {
         i = true;
-        let tabsList = document.getElementById('tab-list2');
-        let currentTabs = document.createDocumentFragment();
-        tabsList.textContent = '';
-        for (let tab of tabs) {
-            if (tab.id != tabId) {
-                let tabLink = document.createElement('a');
-                tabLink.textContent = tab.title + " - " + tab.id;
-                currentTabs.appendChild(tabLink);
-                let spacing = document.createElement('br');
-                currentTabs.appendChild(spacing);
-            }
-        }
-        tabsList.appendChild(currentTabs);
-        let querying = browser.tabs.query(active);
-        querying.then(logTabs, onError);
-
-
+        makeList(tabs,tabId);
     });
 }
 
 
 function newTab() {
     // ++count;
-    document.getElementById('log').innerHTML = "Changed" + count;
+    // document.getElementById('log').innerHTML = "Changed" + count;
     browser.tabs.create({});
 
-}
-
-function removeTab() {
-    // ++count;
-    document.getElementById('log').innerHTML = "Changed " + document.getElementById('tabID').value;
-    browser.tabs.remove(parseInt(document.getElementById('tabID').value));
 }
