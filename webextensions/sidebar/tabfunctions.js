@@ -17,8 +17,9 @@ function makeList(tabs,tabId = -1) {
             // document.getElementById('log').innerHTML = "Changed" + (++count);
             var li = document.createElement("li");
             var text = document.createElement("span");
-            var randomColor = Math.floor(Math.random() * 16777215).toString(16);
-            li.style.backgroundColor = '#' + randomColor;
+            // var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            // li.style.backgroundColor = '#' + randomColor;
+            li.classList += "tabLi";
             text.innerHTML = tab.title;
             text.classList += "TabTitle"
             var btn = document.createElement("button");
@@ -33,7 +34,7 @@ function makeList(tabs,tabId = -1) {
             };
 
             //append the stuff
-            // li.appendChild(text);
+            li.appendChild(text);
             li.appendChild(btn);
             tabsList.appendChild(li);
         }

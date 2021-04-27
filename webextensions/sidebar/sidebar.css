@@ -42,7 +42,24 @@ li.groupLi{
     padding-right: 5px;
     overflow: auto;
 } */
+span.TabTitle{
+    flex: 2; 
+    overflow: auto;
+}
 button.remove{
-    position: absolute;
-    right: 5px;
+    float: right;
+    flex: 1;
+}
+li.tabLi{
+    list-style-type: none;
+    width: auto;
+    height: 20px;
+    margin-top: 10px;
+    /* padding-top: 15px; */
+    /* padding-left: 5px; */
+    background-color: grey;
+    left: 0;
+    right: 0;
+    display: flex;
+    /* justify-content: flex-end; */
 }
