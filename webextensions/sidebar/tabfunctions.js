@@ -17,8 +17,8 @@ function makeList(tabs,tabId = -1) {
             // document.getElementById('log').innerHTML = "Changed" + (++count);
             var li = document.createElement("li");
             var text = document.createElement("span");
-            var randomColor = Math.floor(Math.random() * 16777215).toString(16);
-            li.style.backgroundColor = '#' + randomColor;
+            //var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            //li.style.backgroundColor = '#' + randomColor;
             text.innerHTML = tab.title;
             var btn = document.createElement("button");
             btn.setAttribute("class", "remove");
